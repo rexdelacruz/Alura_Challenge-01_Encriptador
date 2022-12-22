@@ -1,0 +1,203 @@
+body {
+    background: #E5E5E5;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+/*Aquí inicia el header*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: auto;
+    margin: 3em 0 0 4em;
+}
+
+header img {
+    width: 3%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.encriptar-mensaje {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-right: 20px;
+}
+
+.text-area {
+    width: 80%;
+    height: 50%;
+    padding: 1em;
+    border: none;
+    font-size: 2em;
+    color: darkblue;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    margin: auto;
+}
+
+.legenda {
+    display: flex;
+    width: 90%;
+    margin:  auto;
+    margin-bottom: 0;
+    justify-content: start;
+}
+
+.legenda p {
+    width: 100%;
+    text-align: start;
+    font-size: 20px;
+}
+
+.legenda p::before {
+    content: url(img/notificacion.png);
+    padding-right: 5px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    justify-content: flex-start;
+}
+
+.btn-1, .btn-2 {
+    display: inline;
+    width: 15em;
+    height: 2em;
+    background-color: darkblue;
+    border: none;
+    border-radius: 3em;
+    margin-right:1em;
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 1em;
+} 
+
+.btn-2 {
+    background-color: #D8DFE8;
+    color: darkblue;
+    margin-right: 0;
+    border: 1px solid darkblue;
+}
+
+.tablero {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: white;
+    justify-content: flex-start;
+    margin-top: -5em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    border-radius: 2em;
+    text-align: center;
+    height: 90vh;
+}
+
+.contenedor-imagen img {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-input-salida {
+    width: 250px;
+    height: 100px;
+    padding: 20px;
+    flex: 100px;
+    
+}
+
+#btn-msg {
+    width: 76%;
+    height: 2.2em;
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    background-color: #D8DFE8;
+    color: darkblue;   
+}
+
+.titulo {
+    padding: 1.5em 1em 0.6em;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.texto {
+    padding: 0 1em 3em 1em;
+    font-size: 1.1em;
+}
+
+footer {
+    width: auto;
+    height: 5px;
+    font-size: 1em;
+    background-color: darkblue;
+    padding: 2em 4em 3em;
+    margin: 0;
+    text-align: left;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    header img {
+            width: 10%;
+        }
+        
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .encriptar-mensaje {
+        margin: auto;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .text-area {
+        font-size: 2em;
+        margin: 0;
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    .botones {
+        margin: auto;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .tablero {
+        margin: auto;
+        font-size: 100%;
+        width: 90%;
+        height: auto;
+    }
+}
